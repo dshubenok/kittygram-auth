@@ -9,5 +9,6 @@ router.register(r'achivements', AchivementViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('auth/', include('djoser.urls')),
 ]
 
